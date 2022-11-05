@@ -1,0 +1,14 @@
+.input-text {
+  &__input {
+  }
+
+  &__label {
+    cursor: pointer;
+
+    &__txt {
+      color: $additional;
+      display: inline-block;
+      padding-bottom: 14px;
+    }
+  }
+}

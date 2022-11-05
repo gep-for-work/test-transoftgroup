@@ -1,0 +1,10 @@
+@import 'libs';
+
+@import 'components';
+@import 'pages';
+
+body {
+  color: $font-color;
+  width: 100vw;
+  min-height: 100vh;
+}

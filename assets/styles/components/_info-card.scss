@@ -1,0 +1,24 @@
+.info-card {
+  border: 1px solid $additional;
+  padding: calc($offset / 2);
+  border-radius: $border-radius;
+  background-color: $bg-secondary;
+
+  @include hover {
+    box-shadow: 1px 1px 4px $additional;
+  }
+
+  &__field {
+    margin-bottom: calc($offset / 8);
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__title {
+    &:after {
+      content: ':';
+    }
+  }
+}

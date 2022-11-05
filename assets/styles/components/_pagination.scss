@@ -1,0 +1,38 @@
+.pagination {
+  $item-size: 32px;
+
+  display: flex;
+  justify-content: center;
+
+  &__wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__item {
+    width: $item-size;
+    margin: 0 calc($offset / 4);
+    padding-left: 0;
+    padding-right: 0;
+
+    &--active {
+      font-size: 1.1em;
+      transform: scale(1.05);
+      font-weight: bold;
+    }
+
+    &--numbers-list {
+      width: calc($item-size * 2);
+      padding: calc($offset / 2);
+    }
+
+    &:first-child {
+      margin-left: 0;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

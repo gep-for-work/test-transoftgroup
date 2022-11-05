@@ -1,0 +1,19 @@
+.todo-list {
+  $items-offset: calc($offset / 2);
+
+  width: 100%;
+  overflow: hidden;
+  margin-bottom: $offset;
+
+  &__wrap {
+    margin: 0 #{-$items-offset};
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% + #{$items-offset * 2});
+  }
+
+  &__item {
+    max-width: calc(50% - #{$items-offset * 2});
+    margin: 0 $items-offset $items-offset;
+  }
+}

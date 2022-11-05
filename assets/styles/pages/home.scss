@@ -1,0 +1,7 @@
+.page__home {
+  padding: $offset calc($offset / 2);
+
+  &__filters {
+    max-width: 356px;
+  }
+}

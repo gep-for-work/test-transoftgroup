@@ -1,0 +1,42 @@
+.form {
+  &__item {
+    display: block;
+    position: relative;
+    padding-bottom: $offset;
+  }
+
+  &__label {
+    display: inline-block;
+    font-size: 1.15em;
+    font-weight: 500;
+    margin-bottom: calc($offset / 2);
+  }
+
+  &__input {
+    width: 100%;
+    color: $font-color;
+    cursor: pointer;
+    border: 1px solid $primary;
+    padding: calc($offset / 2);
+    display: block;
+    border-radius: $border-radius;
+    background-color: $bg-primary;
+
+    @include hover-and-focus {
+      transition: $transition;
+      box-shadow: 2px 2px 8px $primary;
+    }
+
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+
+  &__error {
+    right: 0;
+    color: $danger;
+    bottom: 0;
+    position: absolute;
+    font-size: 0.875em;
+  }
+}
